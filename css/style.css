@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --dark50: rgba(19,20,20, .6);
+    --dark80: rgba(19,20,20, .9);
+} 
+
+/* Primary */
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    color: #aebcb9;
+    background-color: #0d0d0d;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    z-index: 100;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: #fff;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: #C49B66;
+}
+
+.toggle-button {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: none;
+    top: 1.3rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    background-color: transparent;
+    /* background-repeat:no-repeat; */
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.toggle-button .icon-bar {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.toggle-button .icon-bar:hover {
+    font-size: 1.5rem;
+    color: #C49B66;
+}
+
+.nav-scroll {
+    background: rgba(24, 24, 24, 1);
+    border-bottom: 1px solid rgba(12, 12, 12, 0.04);
+    /* padding: 10px 100px; */
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+}
+
+.nav-scroll .navbar-links li {
+    background-color: rgba(24, 24, 24, 1);
+}
+
+.nav-scroll .navbar-links li a:hover {
+    color: #C49B66;
+}
+
+.nav-scroll .navbar-links li a {
+    color: #fff;
+}
+
+.nav-scroll .brand-title {
+    color: #fff;
+}
+
+.nav-scroll .toggle-button .icon-bar {
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar-links ul {
+        position: absolute;
+        flex-direction: column;
+        left: 50%;
+        width: 100%;
+        margin-left: -50%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links li a:hover {
+        color: #C49B66;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* typewriter */
+/* .txt-type > .txt {
+    border-right: 0.2rem solid #fff;
+} */
+
+/* Video Parralax */
+.parallax--bg {
+    transition: intitial;
+}
+
+.section-one {
+    background:
+        linear-gradient(
+            var(--dark50),
+            var(--dark80)
+        ),
+        url("../images/valhalla-long.jpg");
+    background-position: center 0;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-one-b {
+    background: url("../images/valhalla-revelations.jpg");
+    background-position: center 0;
+    background-size: cover;
+    position: relative;
+    z-index: -100;
+}
+
+.section-one-b:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        var(--dark50),
+        var(--dark80)
+    );
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+
+.section-top h1 {
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+}
+
+.section-top h1 span p {
+    font-weight: 300;
+}
+
+.section-top .socials {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.section-one-b h1 {
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+}
+
+.p-225 {
+    padding: 200px 0;
+}
+
+.p-125 {
+    padding: 125px 0;
+}
+
+.btn-area {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+.section-one p,
+.section-one-b p{
+    font-size: 20px;
+    color: white;
+}
+
+.section-two p{
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
