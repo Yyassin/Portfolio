@@ -267,7 +267,10 @@ h1 {
 }
 
 .social-menu ul li {
-    vertical-align: middle;
+    list-style:none;
+}
+
+.social-menu ul li a {
     display: inline-block;
     font-size: 17px;
     height: 40px;
@@ -276,14 +279,12 @@ h1 {
     box-shadow: 0px 4px 30px rgba(55, 75, 90, 0.6);
     line-height: 40px;
     border-radius: 50%;
-    cursor: pointer;
-    list-style: none;
     margin: 0 5px;
     transition: .3s;
 }
 
 @media screen and (min-width: 500px) {
-    .social-menu ul li:hover {
+    .social-menu ul li a:hover {
         transform: scale(1.2);
     }
   }
