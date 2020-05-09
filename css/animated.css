@@ -4,11 +4,7 @@ Primary style
 
 -------------------------------- */
 
-a {
-  text-decoration: none;
-}
-
-.cd-title {
+/* .cd-title {
   position: relative;
   height: 160px;
   line-height: 230px;
@@ -62,7 +58,7 @@ a {
     font-size: 4.4rem;
     font-weight: 300;
   }
-}
+} */
 @media only screen and (min-width: 1170px) {
   .cd-headline {
     font-size: 6rem;
