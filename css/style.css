@@ -203,6 +203,7 @@ body {
     background-position: center 0;
     background-size: cover;
     height: 100vh;
+    text-align: center;
 }
 
 .section-one-b {
@@ -231,7 +232,6 @@ h1 {
     font-weight: 600;
 }
 
-
 .section-top h1 {
     font-size: 50px;
     margin: 0;
@@ -242,9 +242,39 @@ h1 {
     font-weight: 300;
 }
 
-.section-top .socials {
-    padding-bottom: 0;
-    margin-bottom: 0;
+/* social links */
+.social-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 20px 0 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-menu ul li {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 17px;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(45deg, rgba(50,78,99,1) 13%, rgba(37,39,41,1) 51%);
+    box-shadow: 0px 4px 30px rgba(55, 75, 90, 0.6);
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    list-style: none;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+@media screen and (min-width: 768px) {
+    .social-menu ul li:hover {
+        transform: scale(1.2);
+    }
+  }
+
+.social-menu ul li i{
+    color: #fff;
 }
 
 .section-one-b h1 {
