@@ -427,6 +427,8 @@ h1 {
 }
 
 
+
+
 .section-one-b h1 {
     font-size: 50px;
     margin: 0;
@@ -458,10 +460,7 @@ h1 {
 @media (max-width: 500px) {
     .section-one {
         background:
-            linear-gradient(
-                var(--dark50),
-                var(--dark80)
-            ),
+            
             url("../images/valhalla-revelations.jpg");
     }
 
