@@ -206,7 +206,7 @@ img {
 
 .section-one {
     background:
-        linear-gradient(
+        -webkit-linear-gradient(
             var(--dark50),
             var(--dark80)
         ),
@@ -670,11 +670,6 @@ h1 {
 
 
 @media (max-width: 500px) {
-    .section-one {
-        background:
-            
-            url("../images/valhalla-revelations.jpg");
-    }
 
     .section-top h1 {
         font-size: 37px;
