@@ -455,7 +455,7 @@ h1 {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .section-one {
         background:
             linear-gradient(
