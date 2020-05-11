@@ -670,6 +670,16 @@ h1 {
 
 
 @media (max-width: 500px) {
+    .section-one {
+        background:
+        -webkit-linear-gradient(
+          rgba(5,5,5,0),
+          rgba(5,5,5,1)
+          ),
+          url("../images/red-rocks.jpg");
+        background-position: center 0;
+        background-size: cover;
+    }
 
     .section-top h1 {
         font-size: 37px;
