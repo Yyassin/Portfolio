@@ -53,7 +53,7 @@ $(document).ready(function(){
         var scrollbarLocation = $(this).scrollTop();
 
         scrollLink.each(function() {
-            var sectionOffset = $(this.hash).offset().top - 5;
+            var sectionOffset = $(this.hash).offset().top - 10;
 
             if (sectionOffset <= scrollbarLocation) {
                 $(this).parent().addClass('active')
