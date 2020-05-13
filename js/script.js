@@ -1,10 +1,24 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        navbarLinks.classList.toggle('active');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('open');
+        navbarLinks.classList.toggle('active');
+        menuOpen = false;
+    }
+});
+
 // responsive nav menu
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-})
+// toggleButton.addEventListener('click', () => {
+//     navbarLinks.classList.toggle('active');
+// })
 
 
 // opaque nav-bar on scroll
@@ -15,6 +29,39 @@ $(window).on('scroll', function() {
     else {
         $('nav').removeClass('nav-scroll');
     }
+})
+
+//loading
+$(window).on("load", function() {
+    $(".loader-wrapper").fadeOut("slow");
+})
+
+//smooth-scrolling
+$(document).ready(function(){
+    var scrollLink = $('.scroll');
+    console.log(scrollLink)
+
+    scrollLink.click(function(e) {
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+    })
+
+    //active link switch
+    $(window).scroll(function() {
+        var scrollbarLocation = $(this).scrollTop();
+
+        scrollLink.each(function() {
+            var sectionOffset = $(this.hash).offset().top - 5;
+
+            if (sectionOffset <= scrollbarLocation) {
+                $(this).parent().addClass('active')
+                $(this).parent().siblings().removeClass('active');
+            }
+        })
+    })
+
 })
 
 // //Typewriter

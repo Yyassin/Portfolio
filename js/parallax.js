@@ -19,7 +19,6 @@ $(window).scroll(function(e) {
   
   function parallax() {
     var w = window.innerWidth;
-    console.log(w);
     pFactor = 0.4
 
     if (w< 1100) {

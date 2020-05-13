@@ -9,22 +9,23 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animated.css" />
 
-  <title>Responsive Nav</title>
+  <title>Yousef's Portfolio</title>
 </head>
 
 <body class="dark-theme">
-  <div class="section-one parallax--bg">
+  <div class="section-one parallax--bg" id="home">
     <div class="nav-wrapper" style="height: 2em;">
       <nav class="navbar">
-        <div class="brand-title">Brand Name</div>
-        <button class="toggle-button">
-          <span class="icon-bar"><i class="fas fa-bars"></i></span>
-        </button>
+        <div class="brand-title">YY</div>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
         <div class="navbar-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a class="scroll" href="#home">Home</a></li>
+            <li><a class="scroll" href="#about">About</a></li>
+            <li><a class="scroll" href="#projects">Projects</a></li>
+            <li><a class="scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -33,42 +34,42 @@
     <div class="section-top p-225">
       <!-- <h1>I Am <span class="txt-type" data-wait="3000" data-words='["Yousef Yassin", "a Designer", "a Creator"]'></span> <span><p>Lorem ipsum dolor sit, amet.</p></span></h1> -->
       <h1 class="cd-headline clip is-full-width">
-        <span>
-          <p>Lorem ipsum dolor sit, amet.</p>
-        </span>
-        <br />
         <span>I Am</span>
         <span class="cd-words-wrapper">
           <b class="is-visible">Yousef Yassin</b>
           <b>a Developer</b>
           <b>a Designer</b>
         </span>
-        <div class="social-menu">
-          <ul>
-            <li>
-              <a href="https://github.com/yyassin" target="_blank"><i class="fab fa-github"></i></a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/yousefy" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-          </ul>
-        </div>
       </h1>
+      <p class="statement">
+        Student at Carleton. <br class="intern"> Intern at &nbsp;<span>(your name goes here!).</span>
+      </p>
+      <div class="social-menu">
+        <ul>
+          <li>
+            <a href="https://github.com/yyassin" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/yousefy" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
       <a href="#" class="btn-area">Get in Touch</a>
     </div>
   </div>
 
-  <div class="section-about p-125">
+  <div class="section-about p-100" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
           <div class="hero-img mb-md50">
-            <img src="images/dark-mac-des.jpg" class="about-hero" alt="" />
+            <div class="about-hero"></div>
+            <!-- <img src="images/dark-mac-des.jpg" class="about-hero" alt="" /> -->
           </div>
         </div>
         <div class="col-lg-7">
           <div class="content">
-            <h4 class="title title-left">I Am UI / UX Designer</h4>
+            <h4 class="title title-left">Nice to Meet You.</h4>
             <p>
               I am <span>Alex Smith</span> fusce quis volutpat porta, ut
               tincidunt eros est nec diam erat quis volutpat porta, neque
@@ -85,40 +86,17 @@
               do. We’ll push you out of your comfort zone from time-to-time.
             </p>
             <a href="#" class="btn-area">Contact Me</a>
-            <a href="#" class="btn-area">Download CV</a>
+            <a href="files/CV.pdf" class="btn-area" download >Download CV</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section-one-b p-125 parallax--bg">
-    <h1>Parralax Effect</h1>
-  </div>
-
-  <div class="section-two p-125">
-    <div class="content">
-      <h1>Section Header</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        veritatis, aliquid neque deserunt ullam velit praesentium maxime. Quia
-        culpa praesentium, exercitationem earum incidunt, ipsa ullam a quod
-        doloribus officia reiciendis. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Repellendus veritatis, aliquid neque deserunt ullam
-        velit praesentium maxime. Quia culpa praesentium, exercitationem earum
-        incidunt, ipsa ullam a quod doloribus officia reiciendis.
-      </p>
-    </div>
-  </div>
-
-  <div class="section-one-b p-125 parallax--bg">
+  
+  <div class="section-projects p-100" id="projects">
     <h1>Projects</h1>
-  </div>
-
-  <div class="section-projects p-125">
     <div class="content">
-      <h1>Projects</h1>
-
       <main class="project-content">
         <div class="project-card">
           <div class="card-content">
@@ -127,11 +105,12 @@
               Geosocial networking and online matching application for pickup sports games.
             </p>
             <div class="resources">
-              <i class="fab fa-python"></i>
               <i class="fab fa-js-square"></i>
               <i class="fab fa-node"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
             </div>
-            <a href="https://github.com/" class="btn">View Project</a>
+            <a href="https://github.com/Yyassin/meetSport" target="_blank" class="btn">View Project</a>
           </div>
         </div>
         <div class="project-card">
@@ -141,11 +120,9 @@
               General stock-tracking financial application.
             </p>
             <div class="resources">
-              <i class="fab fa-python"></i>
-              <i class="fab fa-js-square"></i>
-              <i class="fab fa-node"></i>
+              <i class="fab fa-java"></i>
             </div>
-            <a href="https://github.com/" class="btn">View Project</a>
+            <a href="https://github.com/Yyassin/Stockpreme" target="_blank" class="btn">View Project</a>
           </div>
         </div>
         <div class="project-card">
@@ -155,29 +132,76 @@
               TicTacToe with a nice spin of sudoku.
             </p>
             <div class="resources">
-              <i class="fab fa-python"></i>
-              <i class="fab fa-js-square"></i>
-              <i class="fab fa-node"></i>
+              <i class="fab fa-java"></i>
             </div>
-            <a href="https://github.com/" class="btn">View Project</a>
+            <a href="https://github.com/Yyassin/SudTacOku" target="_blank" class="btn">View Project</a>
           </div>
         </div>
         <div class="project-card">
           <div class="card-content">
-            <h2 class="card-title">coming soon..</h2>
+            <h2 class="card-title">consultX</h2>
             <p class="description">
-              Stay tuned!
+              A django based webapp that aims to help freelancers & contractors.
             </p>
             <div class="resources">
               <i class="fab fa-python"></i>
-              <i class="fab fa-js-square"></i>
-              <i class="fab fa-node"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-bootstrap"></i>
             </div>
-            <a href="https://github.com/" class="btn">View Project</a>
+            <a href="https://github.com/Yyassin/ConsultX" target="_blank" class="btn">View Project</a>
           </div>
         </div>
       </main>
     </div>
+  </div>
+
+  <div class="section-one-b p-100 parallax--bg" id="contact">
+    <h1>Contact Me</h1>
+  </div>
+
+  <div class="section-contact p-50">
+    <div class="content">
+      <section class="contact section-padding">
+        <div class="container">
+          <div class="row">
+  
+            <!-- contact form -->
+            <form class="form" id="contact-form" method="POST" action="https://formspree.io/mwkrpyvw" target="_blank">
+              <div class="messages"></div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                    </div>
+                  </div>
+  
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea id="form_message" name="message" placeholder="Message" rows="4"
+                        required="required"></textarea>
+                    </div>
+  
+                    <input type="submit" name="submit" value="Submit" class="btn">
+                  </div>
+                </div>
+            </form>
+          </div><!-- /row -->
+        </div><!-- /container -->
+      </section>
+    </div>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
   </div>
 
   <!-- scripts  -->
