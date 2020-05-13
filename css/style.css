@@ -89,28 +89,69 @@ img {
     color: #C49B66;
 }
 
-.toggle-button {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    display: none;
-    top: 1.3rem;
-    right: 1rem;
-    flex-direction: column;
-    justify-content: space-between;
+/* responsive toggle */
 
+.menu-btn {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 1rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
 
-    background-color: transparent;
-    /* background-repeat:no-repeat; */
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
+  width:40px;
+  height: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  transition: all .5s ease-in-out;
+  border: none;
 }
 
-.toggle-button .icon-bar {
-    font-size: 1.5rem;
-    color: #fff;
+.menu-btn__burger {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all .5s ease-in-out;
+  text-align: left;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-7px);
+  
+}
+
+.menu-btn__burger::after {
+  transform: translateY(7px);
+}
+
+/* animation */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .nav-scroll {
@@ -142,6 +183,10 @@ img {
     color: #fff;
 }
 
+.navbar-links li.active a{
+  color: #C49B66;
+}
+
 .nav-scroll .brand-title {
     color: #fff;
 }
@@ -151,8 +196,10 @@ img {
 }
 
 @media (max-width: 500px) {
-    .toggle-button {
+    .menu-btn {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .navbar-links {
@@ -182,13 +229,18 @@ img {
         padding: .5rem 1rem;
     }
 
+    .navbar-links li.active a {
+        color: #C49B66;
+    }
+
     .navbar-links li a:hover {
         color: #C49B66;
     }
 
     .navbar-links.active {
-        display: flex;
+      display: flex;
     }
+
 }
 
 /* typewriter */
@@ -210,11 +262,10 @@ img {
             var(--dark50),
             var(--dark80)
         ),
-        url("../images/valhalla-long.jpg");
+        url("../images/desk.jpg");
     background-position: center 0;
     background-size: cover;
     height: 100vh;
-    text-align: center;
 }
 
 .section-one-b {
@@ -384,6 +435,28 @@ h1 {
     padding-bottom: 0;
     margin-bottom: 0;
     box-shadow: 0 4px 12px 0px rgba(0,0,0,0.25);
+}
+
+.about-hero {
+  width: 100%;
+  height: 693px;
+  background: url(../images/hero-youf.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(95%);
+}
+
+@media (min-width: 990px) {
+  .about-hero {
+    height: 500px;
+  }
+}
+
+@media (min-width: 400px) {
+  .about-hero {
+    height: 500px;
+  }
 }
 
 .section-about .hero-img {
@@ -568,16 +641,16 @@ h1 {
   transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
 .project-card:nth-child(1):before {
-  background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url(../images/roland-garros.jpg);
 }
 .project-card:nth-child(2):before {
-  background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url(../images/stocks.jpg);
 }
 .project-card:nth-child(3):before {
-  background-image: url(../images/dark-mac-os.jpg);
+  background-image: url(../images/tictactoe.jpg);
 }
 .project-card:nth-child(4):before {
-  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url(../images/consulting.jpg);
 }
 
 .card-content {
@@ -617,7 +690,7 @@ h1 {
 .resources i {
   padding: 5px;
   font-size: 25px;
-  color: rgba(250, 250, 250, 0.4)
+  color: rgba(250, 250, 250, 0.7)
 }
 
 .btn {
@@ -724,6 +797,80 @@ h1 {
   padding: 10px 40px;
 }
 
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+
+/* loader */
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
 
 
 @media (min-width: 400px) {
@@ -736,8 +883,8 @@ h1 {
     .section-one {
         background:
         -webkit-linear-gradient(
-          rgba(5,5,5,0),
-          rgba(5,5,5,1)
+          rgba(5,5,5,0.5),
+          rgba(5,5,5,0.9)
           ),
           url("../images/red-rocks.jpg");
         background-position: center 0;
