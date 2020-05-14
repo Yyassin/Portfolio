@@ -85,10 +85,6 @@ img {
     display: block;
 }
 
-.navbar-links li a:hover {
-    color: #C49B66;
-}
-
 /* responsive toggle */
 
 .menu-btn {
@@ -107,7 +103,7 @@ img {
   overflow: hidden;
   outline: none;
   background-color: transparent;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   border: none;
 }
 
@@ -116,7 +112,7 @@ img {
   height: 3px;
   background: #fff;
   border-radius: 2px;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   text-align: left;
 }
 
@@ -128,7 +124,7 @@ img {
   height: 3px;
   background: #fff;
   border-radius: 2px;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -175,10 +171,6 @@ img {
     background-color: rgba(24, 24, 24, 1);
 }
 
-.nav-scroll .navbar-links li a:hover {
-    color: #C49B66;
-}
-
 .nav-scroll .navbar-links li a {
     color: #fff;
 }
@@ -193,6 +185,13 @@ img {
 
 .nav-scroll .toggle-button .icon-bar {
     color: #fff;
+}
+
+@media (min-width: 500px){
+  .navbar-links li a:hover,
+  .nav-scroll .navbar-links li a:hover {
+  color: #C49B66;
+}
 }
 
 @media (max-width: 500px) {
@@ -233,10 +232,6 @@ img {
         color: #C49B66;
     }
 
-    .navbar-links li a:hover {
-        color: #C49B66;
-    }
-
     .navbar-links.active {
       display: flex;
     }
@@ -262,7 +257,7 @@ img {
             var(--dark50),
             var(--dark80)
         ),
-        url("../images/desk.jpg");
+        url("../images/dark-mac-os.jpg");
     background-position: center 0;
     background-size: cover;
     height: 100vh;
@@ -501,6 +496,22 @@ h1 {
 
 .section-about .content p span {
   font-weight: 600;
+}
+
+.section-about .content p.intro {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.section-about .content p a{
+  color: #fff;
+  font-weight: 500;
+  transition: .1s ease-in-out;
+}
+
+.section-about .content p a:hover{
+  color: #C49B66;
+  font-weight: 500;
 }
 
 @media (max-width: 500px) {
