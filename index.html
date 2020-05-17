@@ -1,207 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animated.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animated.css" />
+    <title>Yousef's Portfolio</title>
+  </head>
 
-  <title>Yousef's Portfolio</title>
-</head>
+  <body class="dark-theme">
+    <div class="section-one parallax--bg" id="home">
+      <div class="nav-wrapper" style="height: 2em;">
+        <nav class="navbar">
+          <div class="brand-title">YY</div>
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+          <div class="navbar-links">
+            <ul>
+              <li class="active"><a class="scroll" href="#home">Home</a></li>
+              <li><a class="scroll" href="#about">About</a></li>
+              <li><a class="scroll" href="#projects">Projects</a></li>
+              <li><a class="scroll" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-<body class="dark-theme">
-  <div class="section-one parallax--bg" id="home">
-    <div class="nav-wrapper" style="height: 2em;">
-      <nav class="navbar">
-        <div class="brand-title">YY</div>
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
-        <div class="navbar-links">
+      <!-- Inspiration: CSS Headlines @ https://codyhouse.co/gem/css-animated-headlines -- animations.css-->
+      <div class="section-top p-225">
+        <!-- <h1>I Am <span class="txt-type" data-wait="3000" data-words='["Yousef Yassin", "a Designer", "a Creator"]'></span> <span><p>Lorem ipsum dolor sit, amet.</p></span></h1> -->
+        <h1 class="cd-headline clip is-full-width">
+          <span>I Am</span>
+          <span class="cd-words-wrapper">
+            <b class="is-visible">Yousef Yassin</b>
+            <b>a Developer</b>
+            <b>a Designer</b>
+          </span>
+        </h1>
+        <p class="statement">
+          Student at Carleton. <br class="intern" />
+          Intern at &nbsp;<span>(your name goes here!).</span>
+        </p>
+        <!-- Inspiration: Muhammed Erdem @ https://codepen.io/JavaScriptJunkie/pen/jvRGZy -->
+        <div class="social-menu">
           <ul>
-            <li class="active"><a class="scroll" href="#home">Home</a></li>
-            <li><a class="scroll" href="#about">About</a></li>
-            <li><a class="scroll" href="#projects">Projects</a></li>
-            <li><a class="scroll" href="#contact">Contact</a></li>
+            <li>
+              <a href="https://github.com/yyassin" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/yousefy" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
           </ul>
         </div>
-      </nav>
-    </div>
-
-    <div class="section-top p-225">
-      <!-- <h1>I Am <span class="txt-type" data-wait="3000" data-words='["Yousef Yassin", "a Designer", "a Creator"]'></span> <span><p>Lorem ipsum dolor sit, amet.</p></span></h1> -->
-      <h1 class="cd-headline clip is-full-width">
-        <span>I Am</span>
-        <span class="cd-words-wrapper">
-          <b class="is-visible">Yousef Yassin</b>
-          <b>a Developer</b>
-          <b>a Designer</b>
-        </span>
-      </h1>
-      <p class="statement">
-        Student at Carleton. <br class="intern"> Intern at &nbsp;<span>(your name goes here!).</span>
-      </p>
-      <div class="social-menu">
-        <ul>
-          <li>
-            <a href="https://github.com/yyassin" target="_blank"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/yousefy" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-        </ul>
+        <a href="#contact" class="btn-area scroll">Get in Touch</a>
       </div>
-      <a href="#contact" class="btn-area scroll">Get in Touch</a>
     </div>
-  </div>
 
-  <div class="section-about p-100" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="hero-img mb-md50">
-            <div class="about-hero"></div>
-            <!-- <img src="images/dark-mac-des.jpg" class="about-hero" alt="" /> -->
+    <!-- Inspiration: Personala @ http://www.innovationplans.com/idesign/personala/dark.html-->
+    <div class="section-about p-100" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="hero-img mb-md50">
+              <div class="about-hero"></div>
+              <!-- <img src="images/dark-mac-des.jpg" class="about-hero" alt="" /> -->
+            </div>
           </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="content">
-            <h4 class="title title-left">Nice to Meet You.</h4>
-            <p class="intro">
-              Hi, I'm <span>Yousef.</span> I'm a systems developer living and learning in Ottawa, Ontario. 
-            </p>
-            <p>
-              I'm passionate about creating fun and fluid experiences with a desire of empowering people and making their lives more fulfilling. You can find me on <a href="https://linkedin.com/in/yousefy" target="_blank">Linkedin</a> and <a href="https://github.com/yyassin" target="_blank">Github</a>, download my resume or shoot me an email below. 
-            </p>
-            <p>I can't wait to hear from you!</p>
-            <a href="#contact" class="btn-area scroll">Contact Me</a>
-            <a href="files/CV.pdf" class="btn-area" download >Download CV</a>
+          <div class="col-lg-7">
+            <div class="content">
+              <h4 class="title title-left">Nice to Meet You.</h4>
+              <p class="intro">
+                Hi, I'm <span>Yousef.</span> I'm a systems developer living and
+                learning in Ottawa, Ontario.
+              </p>
+              <p>
+                I'm passionate about creating fun and fluid experiences with a
+                desire of empowering people and making their lives more
+                fulfilling. You can find me on
+                <a href="https://linkedin.com/in/yousefy" target="_blank"
+                  >Linkedin</a
+                >
+                and
+                <a href="https://github.com/yyassin" target="_blank">Github</a>,
+                download my resume or shoot me an email below.
+              </p>
+              <p>I can't wait to hear from you!</p>
+              <a href="#contact" class="btn-area scroll">Contact Me</a>
+              <a href="files/CV.pdf" class="btn-area" download>Download CV</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  
-  <div class="section-projects p-100" id="projects">
-    <h1>Projects</h1>
-    <div class="content">
-      <main class="project-content">
-        <div class="project-card">
-          <div class="card-content">
-            <h2 class="card-title">meetSport</h2>
-            <p class="description">
-              Geosocial networking and online matching application for pickup sports games.
-            </p>
-            <div class="resources">
-              <i class="fab fa-js-square"></i>
-              <i class="fab fa-node"></i>
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3"></i>
+    <!-- Inspiration: Ryan Mulligan @ https://codepen.io/hexagoncircle/pen/XWbWKwL-->
+    <div class="section-projects p-100" id="projects">
+      <h1>Projects</h1>
+      <div class="content">
+        <main class="project-content">
+          <div class="project-card">
+            <div class="card-content">
+              <h2 class="card-title">meetSport</h2>
+              <p class="description">
+                Geosocial networking and online matching application for pickup
+                sports games.
+              </p>
+              <div class="resources">
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3"></i>
+              </div>
+              <a
+                href="https://github.com/Yyassin/meetSport"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
-            <a href="https://github.com/Yyassin/meetSport" target="_blank" class="btn">View Project</a>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="card-content">
-            <h2 class="card-title">stockpreme</h2>
-            <p class="description">
-              General stock-tracking financial application.
-            </p>
-            <div class="resources">
-              <i class="fab fa-java"></i>
+          <div class="project-card">
+            <div class="card-content">
+              <h2 class="card-title">stockpreme</h2>
+              <p class="description">
+                General stock-tracking financial application.
+              </p>
+              <div class="resources">
+                <i class="fab fa-java"></i>
+              </div>
+              <a
+                href="https://github.com/Yyassin/Stockpreme"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
-            <a href="https://github.com/Yyassin/Stockpreme" target="_blank" class="btn">View Project</a>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="card-content">
-            <h2 class="card-title">sudtacoku</h2>
-            <p class="description">
-              TicTacToe with a nice spin of sudoku.
-            </p>
-            <div class="resources">
-              <i class="fab fa-java"></i>
+          <div class="project-card">
+            <div class="card-content">
+              <h2 class="card-title">sudtacoku</h2>
+              <p class="description">
+                TicTacToe with a nice spin of sudoku.
+              </p>
+              <div class="resources">
+                <i class="fab fa-java"></i>
+              </div>
+              <a
+                href="https://github.com/Yyassin/SudTacOku"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
-            <a href="https://github.com/Yyassin/SudTacOku" target="_blank" class="btn">View Project</a>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="card-content">
-            <h2 class="card-title">consultX</h2>
-            <p class="description">
-              A django based webapp that aims to help freelancers & contractors.
-            </p>
-            <div class="resources">
-              <i class="fab fa-python"></i>
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3"></i>
-              <i class="fab fa-bootstrap"></i>
+          <div class="project-card">
+            <div class="card-content">
+              <h2 class="card-title">consultX</h2>
+              <p class="description">
+                A django based webapp that aims to help freelancers &
+                contractors.
+              </p>
+              <div class="resources">
+                <i class="fab fa-python"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3"></i>
+                <i class="fab fa-bootstrap"></i>
+              </div>
+              <a
+                href="https://github.com/Yyassin/ConsultX"
+                target="_blank"
+                class="btn"
+                >View Project</a
+              >
             </div>
-            <a href="https://github.com/Yyassin/ConsultX" target="_blank" class="btn">View Project</a>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
-  </div>
 
-  <div class="section-one-b p-100 parallax--bg" id="contact">
-    <h1>Contact Me</h1>
-  </div>
+    <!-- Inspiration: Daniels @ http://www.innovationplans.com/idesign/daniels/main.html -->
+    <div class="section-one-b p-100 parallax--bg" id="contact">
+      <h1>Contact Me</h1>
+    </div>
 
-  <div class="section-contact p-50">
-    <div class="content">
-      <section class="contact section-padding">
-        <div class="container">
-          <div class="row">
-  
-            <!-- contact form -->
-            <form class="form" id="contact-form" method="POST" action="https://formspree.io/mwkrpyvw" target="_blank">
-              <div class="messages"></div>
+    <div class="section-contact p-50">
+      <div class="content">
+        <section class="contact section-padding">
+          <div class="container">
+            <div class="row">
+              <!-- contact form -->
+              <form
+                class="form"
+                id="contact-form"
+                method="POST"
+                action="https://formspree.io/mwkrpyvw"
+                target="_blank"
+              >
+                <div class="messages"></div>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                      <input
+                        id="form_name"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required="required"
+                      />
                     </div>
                   </div>
-  
+
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                      <input
+                        id="form_email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required="required"
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea id="form_message" name="message" placeholder="Message" rows="4"
-                        required="required"></textarea>
+                      <textarea
+                        id="form_message"
+                        name="message"
+                        placeholder="Message"
+                        rows="4"
+                        required="required"
+                      ></textarea>
                     </div>
-  
-                    <input type="submit" name="submit" value="Submit" class="btn">
+
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Submit"
+                      class="btn"
+                    />
                   </div>
                 </div>
-            </form>
-          </div><!-- /row -->
-        </div><!-- /container -->
-      </section>
+              </form>
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /container -->
+        </section>
+      </div>
     </div>
-  </div>
 
-  <!-- Loader -->
-  <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-  </div>
+    <!-- Loader -->
+    <!-- Inspiration: Tashfeen @ https://codepen.io/tashfene/pen/raEqrJ -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 
-  <!-- scripts  -->
-  <script src="js/script.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
-  <script src="js/parallax.js"></script>
-  <script src="js/animated.js"></script>
-</body>
-
+    <!-- scripts  -->
+    <script src="js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/animated.js"></script>
+  </body>
 </html>

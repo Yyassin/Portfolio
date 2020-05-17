@@ -12,6 +12,7 @@
 //     'center ' + (wScroll*0.55 - 650)*-1 + 'px')
 // }
 
+//Credit: Kevin Powell on Youtube
 $(window).scroll(function(e) {
     parallax();
   })
