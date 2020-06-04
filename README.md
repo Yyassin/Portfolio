@@ -1,7 +1,7 @@
 # My Web Portfolio
 [![GitHub stars](https://img.shields.io/github/stars/Yyassin/Portfolio.svg?colorB=007EC6)](https://github.com/Yyassin/Portfolio/stargazers)
 
-> A webportfolio used to showcase github projects & share social links and resumes. Built using HTML, CSS, Bootstrap, JavaScript and Jquery.
+> A webportfolio used to showcase projects & share social links and resumes. Built using HTML, CSS, Bootstrap, JavaScript and Jquery.
 > Visit @ https://yyassin.github.io/Portfolio/ .
 
 ## Credits & inspirations
