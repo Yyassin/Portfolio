@@ -2,7 +2,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Yyassin/Portfolio.svg?colorB=007EC6)](https://github.com/Yyassin/Portfolio/stargazers)
 
 > A webportfolio used to showcase github projects & share social links and resumes. Built using HTML, CSS, Bootstrap, JavaScript and Jquery.
-> Visit it @ https://yyassin.github.io/Portfolio/ .
+> Visit @ https://yyassin.github.io/Portfolio/ .
 
 ## Credits & inspirations
 
