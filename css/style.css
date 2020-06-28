@@ -183,7 +183,7 @@ img {
   color: #C49B66;
 }
 
-.nav-scroll .brand-title {
+.brand-title a{
   color: #fff;
 }
 
@@ -715,21 +715,27 @@ Source: https://codepen.io/hexagoncircle/pen/XWbWKwL
   transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
 
+
 .project-card:nth-child(1):before {
-  background-image: url(../images/roland-garros.jpg);
+  background-image: url('../images/illumi-banner.png');
 }
 
 .project-card:nth-child(2):before {
-  background-image: url(../images/stocks.jpg);
+  background-image: url(../images/roland-garros.jpg);
 }
 
 .project-card:nth-child(3):before {
-  background-image: url(../images/tictactoe.jpg);
+  background-image: url(../images/stocks.jpg);
 }
 
 .project-card:nth-child(4):before {
+  background-image: url(../images/tictactoe.jpg);
+}
+
+.project-card:nth-child(5):before {
   background-image: url(../images/consulting.jpg);
 }
+
 
 .card-content {
   position: relative;
