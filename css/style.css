@@ -72,6 +72,12 @@ img {
   color: #fff;
 }
 
+.brand-logo {
+  height: 35px;
+  color: #fff;
+  fill: #fff;
+}
+
 .navbar-links ul {
   margin: 0;
   padding: 0;
